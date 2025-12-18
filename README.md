@@ -23,16 +23,16 @@ The exact implementation can vary, but the conceptual flow looks like this:
 
 ```mermaid
 flowchart TD
-    A[User Input] --> B[Prompt 1: Ask LLM for an initial answer]
-    B --> C[LLM Response 1]
+    A["User Input"] --> B["Prompt 1: Ask LLM for an initial answer"]
+    B --> C["LLM Response 1"]
 
-    C --> D[Prompt 2: Refine / Summarize / Reformat]
-    D --> E[LLM Response 2]
+    C --> D["Prompt 2: Refine / Summarize / Reformat"]
+    D --> E["LLM Response 2"]
 
-    E --> F[Prompt 3 (optional): Extract key points or create a different view]
-    F --> G[LLM Response 3 (Final Output)]
+    E --> F["Prompt 3 (optional): Extract key points or create a different view"]
+    F --> G["LLM Response 3 (Final Output)"]
 
-    G --> H[Return result to user / save / log]
+    G --> H["Return result to user / save / log"]
 ```
 
 In code, this typically looks like:
